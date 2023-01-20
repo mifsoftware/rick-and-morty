@@ -1,0 +1,53 @@
+@import '../../../common/styles/variables.scss';
+
+.search-container {
+    margin: 20px 0 20px 44px;
+}
+
+.content {
+    width: 100vw;
+    @extend %display-flex-row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.characters-container {
+    width: 400px;
+}
+
+.characters-list {
+    margin-bottom: 20px;
+    height: calc(100vh - 200px);
+    @extend %display-flex-column;
+    overflow-y: auto;
+
+    img {
+        margin-top: 15px;
+        border-radius: 6px;
+        border: 3px solid;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.selected-character {
+    margin-left: 50px;
+    width: 612px;
+    @extend %display-flex-row;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #9aa9e4;
+
+    .rick,
+    .morty {
+        width: 306px;
+        height: 306px;
+    }
+
+    img {
+        width: 306px;
+        height: 306px;
+        border-radius: 6px;
+    }
+}
